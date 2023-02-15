@@ -1,0 +1,48 @@
+// first create vpc
+
+done
+check configuration
+
+// create two subnet
+
+done
+check configuration
+
+// create internet gateway
+done
+
+// create eip
+done
+
+//create route table
+done
+//route interet gateway
+done
+
+
+//create alb
+done
+
+//create s3 bucket
+done
+//create instace fleet
+done
+//create security group
+done
+
+
+what to do first to debug and make configuration
+1. Vpc and subnets all running
+done
+2. check security groups
+need to change and secure
+3. connect application load balancer to app
+can work
+
+
+
+3. get the instance fleet running
+4. get the s3 bucket running
+5. if got problem make the subnet public first
+6. then access the internet
+7. create repository for the app

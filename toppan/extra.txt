@@ -1,0 +1,23 @@
+# #* Associate ALB to Target Group
+# resource "aws_lb_target_group_attachment" "jazz_alb_tg_association" {
+#   target_group_arn = aws_lb_target_group.jazz_alb_target_group.arn
+#   #   target_id        = element(aws_instance.fleetinstance.*.id, count.index)
+
+#   port      = 80
+# }
+
+
+# #* fleet_app
+# resource "aws_instance" "fleet_app" {
+#   ami                         = "ami-0753e0e42b20e96e3"
+#   count                       = 1
+#   instance_type               = "t2.micro"
+#   subnet_id                   = aws_subnet.serverfleet_private_subnet.id
+#   vpc_security_group_ids      = [aws_security_group.fleet_private_sec_grp.id]
+#   associate_public_ip_address = false
+#   key_name                    = aws_key_pair.jazz.key_name
+#   user_data                   = file("./shell.sh")
+#   tags = {
+#     "Name" = "Jazz-fleet"
+#   }
+# }
